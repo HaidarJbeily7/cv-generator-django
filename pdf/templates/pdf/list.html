@@ -22,10 +22,10 @@
         {% for profile in profiles %}
         <div class="row">
             <div class="col-md-6">
-                {‌{profile.name}}
+                {{ profile.name }}
             </div>
             <div class="col-md-6">
-                <a href="/{‌{profile.id}}" class="btn btn-warning">Download CV</a>
+                <a href="/{{ profile.id }}" class="btn btn-warning">Download CV</a>
             </div>
         </div>
         <hr> {% endfor %}
